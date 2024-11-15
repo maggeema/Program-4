@@ -13,4 +13,4 @@ g++ s2.cc image.cc -o s2
 ./s2 parameters.txt sphere1.pgm sphere2.pgm sphere3.pgm output_directions.txt           
 
 g++ s3.cc image.cc -o s3
-./s3 output_directions.txt object_image1.pgm object_image2.pgm object_image3.pgm 10 50 output_normals.pgm output_albedo.pgm
+./s3 output_directions.txt object1.pgm object2.pgm object3.pgm 10 50 output_normals.pgm output_albedo.pgm

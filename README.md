@@ -4,10 +4,13 @@ i. Which parts of the assignment were completed: Program 1, 2 and 3
 ii. Any bugs that you have encountered
 My program 3 has been full of bugs, and I could not exactly figure out why. 
 
-iii. Complete instructions of how to run our program and iv. The input file (if any) and the output files (if any) g++ -o h1 h1.cc image.cc ./h1 hough_simple_1.pgm hough_simple_1_p1.pgm 50
+iii. Complete instructions of how to run our program and iv. The input file (if any) and the output files (if any) 
 
-g++ -o h2 h2.cc image.cc ./h2 hough_simple_1_p1.pgm 128 hough_simple_1_p2.pgm
+g++ s1.cc image.cc -o s1
+./s1 sphere0.pgm 200 output.txt
 
-g++ -o h3 h3.cc image.cc ./h3 hough_simple_1.pgm hough_simple_1_p3.pgm 128
+g++ s2.cc image.cc -o s2
+./s2 parameters.txt sphere1.pgm sphere2.pgm sphere3.pgm output_directions.txt           
 
-g++ -o h4 h4.cc image.cc ./h4 hough_simple_1.pgm hough_array.txt 150 output_lines.pgm
+g++ s3.cc image.cc -o s3
+./s3 output_directions.txt object_image1.pgm object_image2.pgm object_image3.pgm 10 50 output_normals.pgm output_albedo.pgm
